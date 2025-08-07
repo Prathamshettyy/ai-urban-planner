@@ -6,12 +6,15 @@
 
 @layer base {
   body {
-    @apply bg-brand-gray-light text-gray-800 antialiased;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-/* Leaflet CSS import */
-@import "leaflet/dist/leaflet.css";
+/* Leaflet CSS import - using URL import to avoid potential build issues */
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
 
 /* Custom styles for Leaflet map container to ensure it has a size */
 .leaflet-container {
