@@ -1,0 +1,13 @@
+# Node.js dependencies
+/frontend/node_modules/
+/frontend/.next/
+/frontend/package-lock.json
+
+# Python
+/backend/__pycache__/
+/backend/venv/
+
+# General
+.DS_Store
+npm-debug.log*
+*.log

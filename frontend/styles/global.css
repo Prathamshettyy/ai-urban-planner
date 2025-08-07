@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-gray-light text-gray-800 antialiased;
+  }
+}
+
+/* Leaflet CSS import */
+@import "leaflet/dist/leaflet.css";
+
+/* Custom styles for Leaflet map container to ensure it has a size */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem; /* rounded-xl */
+  z-index: 0;
+}
